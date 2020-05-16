@@ -1,5 +1,5 @@
 # esx_vangelico_robbery
-ESX Vangelico Robbery V 2.0.0
+ESX Vangelico Robbery
 
 [REQUIREMENTS]
 
