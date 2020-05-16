@@ -6,6 +6,7 @@ ESX Vangelico Robbery
   * FiveM-ipl   => https://github.com/ESX-PUBLIC/fivem-ipl
   * esx_policejob => https://github.com/ESX-Org/esx_policejob
   * esx_ambulancejob => https://github.com/ESX-Org/esx_ambulancejob
+  * utk_fingerpint => https://github.com/utkuali/Finger-Print-Hacking-Game
 
 [INSTALLATION]
 
@@ -16,16 +17,14 @@ ESX Vangelico Robbery
 
 ```
 start esx_vangelico_robbery
+start utk_hackdependency
+start utk_fingerprint
 ```
 
 [ORIGINAL SCRIPT]
-
+  * esx_vangelico_robbery => https://github.com/ESX-PUBLIC/esx_vangelico_robbery
   * esx_holdup => https://github.com/ESX-Org/esx_holdup
 
-[OLD VIDEO]
+[VIDEO]
 
-  * https://www.youtube.com/watch?v=MivP5hU5m8A
-
-[NEW VIDEO]
-
-  * https://streamable.com/y11r7
+https://streamable.com/xfe76h
