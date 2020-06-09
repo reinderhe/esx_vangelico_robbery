@@ -1,6 +1,5 @@
-fx_version 'adamant'
-
-game 'gta5'
+fx_version 'bodacious'
+games { 'gta5' }
 
 description 'ESX Vangelico Robbery'
 
