@@ -172,18 +172,18 @@ Citizen.CreateThread(function()
 						end
 						incircle = true
 						if IsControlJustReleased(1, 38) then
-							TriggerEvent("utk_fingerprint:Start", 1, 6, 2, function(outcome, reason)
-								if outcome == true then
-									if Config.NeedBag then
-										if borsa == 40 or borsa == 41 or borsa == 44 or borsa == 45 then
-											ESX.TriggerServerCallback('esx_vangelico_robbery:conteggio', function(CopsConnected)
-												if CopsConnected >= Config.RequiredCopsRob then
+							ESX.TriggerServerCallback('esx_vangelico_robbery:conteggio', function(CopsConnected)
+							if CopsConnected >= Config.RequiredCopsRob then
+								TriggerEvent("utk_fingerprint:Start", 1, 6, 2, function(outcome, reason)
+								
+										if outcome == true then
+												if Config.NeedBag then
+													if borsa == 40 or borsa == 41 or borsa == 44 or borsa == 45 then
+											
+												
 													TriggerServerEvent('esx_vangelico_robbery:rob', k)
 													PlaySoundFromCoord(soundid, "VEHICLES_HORNS_AMBULANCE_WARNING", pos2.x, pos2.y, pos2.z)
-												else
-													TriggerEvent('esx:showNotification', _U('min_two_police') .. Config.RequiredCopsRob .. _U('min_two_police2'))
-												end
-											end)		
+												
 										else
 											TriggerEvent('esx:showNotification', _U('need_bag'))
 										end
@@ -200,7 +200,13 @@ Citizen.CreateThread(function()
 								elseif outcome == false then
 									TriggerEvent('esx:showNotification', _U('hack_failed'))
 								end
-							end)
+
+		
+								end)
+							else
+							TriggerEvent('esx:showNotification', _U('min_two_police') .. Config.RequiredCopsRob .. _U('min_two_police2'))
+							end
+						end)
                         end
 					elseif(Vdist(pos.x, pos.y, pos.z, pos2.x, pos2.y, pos2.z) > 1.0)then
 						incircle = false
